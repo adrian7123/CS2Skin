@@ -10,6 +10,6 @@ public class BaseConfig : IBasePluginConfig
     public string MongoDatabaseName { get; set; } = "";
     public string MysqlTableName { get; set; } = "";
     [JsonPropertyName("DatabaseType")]
-    public string DbType { get; set; } = Enum.GetName(DatabaseType.MONGODB);
+    public string DbType { get; set; } = Enum.GetName(DatabaseType.MONGODB)!;
     public int Version { get; set; }
 }
